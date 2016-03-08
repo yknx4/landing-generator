@@ -1,3 +1,115 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+# Site settings
+baseurl = "//yknx4.github.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Yknx Software"
+theme = "hugo-freelancer-theme"
+
+
+[params]
+
+    # You can use Markdown syntax for urls [text](//url.to/source) for
+    # most longer texts.
+
+    # To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+    name = "Jorge A Figueroa"
+    description = "Software Development"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email youself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    email = "yknx.4.b+contact@gmail.com"
+
+    [params.navigation]
+        brand = "Yknx's Portfolio"
+
+
+    [params.header]
+        # Copy your own image into './static/img/'' if you wish
+        image = "profile.jpg"
+        name = "J Alejandro Figueroa"
+        subtitle = "Blogger - Programmer - Curious"
+
+
+    [params.portfolio]
+        # All projects defined in their own files. You can find example projects
+        # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+        # at the root of this Hugo site.
+        # For more informtion take a look at the README.
+        title = "Portfolio"
+
+        [params.portfolio.modal]
+            client = "Link"
+            date = "Date"
+            category = "Category"
+            buttontext = "Close"
+
+
+    [params.about]
+        title = "About"
+        # The about text is splitted into a left and right column
+        left = "I am deeply interested on mobile development for **Android**, Desktop Applications on **.NET**, and web development, especially in newer and promising technologies like **Nodejs**, **MongoDB**, **Ruby/Rails**, etc…"
+        right = "Right now I'm doing my internship as a developer in MagmaLabs, working with Ruby/Rails, Javascript (this time AngularJS) and Android. My current projects are Beanstack (Library web application in Ruby/Rails) and MagmaRooms (Android Application for Google Calendar)"
+        [params.about.button]
+            text = "Check my blog"
+            link = "//yknx4.github.io/blog"
+            icon = "file-text-o"
+
+
+    [params.contact]
+        title = "Contact"
+
+        # 'error' defines error messages for invalid inputs
+        [params.contact.form.name]
+            text = "Name"
+            error = "Please enter your name."
+
+        [params.contact.form.email]
+            text = "Email Address"
+            error = "Please enter your email address."
+
+        [params.contact.form.phone]
+            text = "Phone Number"
+            error = "Please enter your phone number."
+
+        [params.contact.form.message]
+            text = "Message"
+            error = "Please enter a message."
+
+        [params.contact.form.button]
+            text = "Send"
+
+
+    [params.footer]
+        copyright = "Published under the Apache License 2.0. Powered by [Hugo](//gohugo.io)."
+
+        [params.footer.location]
+            title = "Location"
+            # Postal address (add as many lines as necessary)
+            address = ["Gaviotas 165", "Colima, MX 28984"]
+
+        [params.footer.social]
+            title = "Within the net..."
+            # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+            # for more icons. The icons are represented by their corresponding
+            # CSS class.
+            [[params.footer.social.networks]]
+                icon = "fa-github"
+                link = "//github.com/yknx4"
+
+            [[params.footer.social.networks]]
+                icon = "fa-facebook"
+                link=  "//facebook.com/yknx4"
+
+
+        [params.footer.credits]
+            title = "About J A Figueroa"
+            text = "Software Engineer living in México interested in all these new and exotic technologies."
