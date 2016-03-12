@@ -1,0 +1,8 @@
+modalID: 1
+title: Wifi Keys Viewer
+date: 2014-07-13
+img: cabin.png
+client: Play Store
+clientLink: "https://play.google.com/store/apps/details?id=com.yknx.wifipasswordviewer&hl=es"
+category: Android Development
+description: WiFi Keys Vieweris an app to view stored wireless networks keys in your Android Device. It works from Android 4.1 to Android 6.0. Requires root access (Passwords stored at protected location)

@@ -1,0 +1,8 @@
+modalID: 3
+title: pConverter
+date: 2014-07-15
+img: circus.png
+client: Github
+clientLink: "https://github.com/yknx4/AndroidMediaSync"
+category: Desktop Development
+description: Playlist to Mp3 is a Windows Forms app that allows you to convert an .m3u playlist content, into mp3 files with configurable paramenter It can convert from every format supported by ffmpeg and .m3u playlists, even videos!. Developed in Visual Studio 2013, with C# and .NET Framework 4.0
