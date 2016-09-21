@@ -1,0 +1,30 @@
+#!/bin/sh
+
+#Path of the Git Repository where you are publishing.
+PUBLISH_PATH="path/to/your/blog/repo"
+
+CURRENT_PATH=`pwd`
+
+echo "Generating Website"
+hugo
+echo "Cleaning"
+find  $PUBLISH_PATH/. -type f -maxdepth 1 ! -name .git -delete
+echo "Copying public files"
+cp -R public/. $PUBLISH_PATH/
+echo "Moving to publish path"
+cd $PUBLISH_PATH/
+git checkout gh-pages
+echo "Adding to git"
+# Add changes to git.
+git add -A
+echo "Commiting to git"
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -m "$msg"
+# Push source and build repos.
+echo "Pushing to Github Pages"
+git push origin gh-pages
+cd $CURRENT_PATH
